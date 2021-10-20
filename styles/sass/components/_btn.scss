@@ -1,0 +1,14 @@
+.btn{
+    text-decoration: none;
+    color: var(--clr-white);
+    background-color: var(--clr-secondary);
+    padding: .7em 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: fit-content;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover, &:focus{
+        background-color: var(--clr-primary);
+    }
+}

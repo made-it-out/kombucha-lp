@@ -1,0 +1,47 @@
+@use '../abstracts/' as a;
+
+.service{
+    padding: 2rem 0;
+    text-align: center;
+
+    @include a.mq-min(768px){
+        padding: 4rem 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        @include a.mq-min(768px){
+            gap: 2rem;
+        }
+    }
+
+    &__heading{
+        font-size: 2.5rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+        color: var(--clr-secondary);
+
+        @include a.mq-min(768px){
+            font-size: 3.5rem;
+            letter-spacing: -3px;
+        }
+    }
+    &__features{
+        width: 100%;
+    }
+    &__feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__message{
+        max-width: 180px;
+    }
+}

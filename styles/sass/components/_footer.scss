@@ -1,0 +1,104 @@
+@use '../abstracts/' as a;
+
+.footer{    
+    background-color: var(--clr-off-white);
+
+    &__top{
+        padding: 2rem 0;
+
+        @include a.mq-min(768px){
+            padding: 4rem 0;
+        }
+    }
+    &__left-container{
+        margin-bottom: 2rem;
+
+        @include a.mq-min(768px){
+            margin-bottom: 0;
+        }
+    }
+    &__left-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+        height: 100%;
+    }
+    &__logo{
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--clr-light-black);
+        letter-spacing: 1px;
+    }
+    &__message{
+        color: var(--clr-light-grey);
+        font-size: 1.2rem;
+    }
+    &__social-icons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__social-icon{
+        cursor: pointer;
+        color: var(--clr-white);
+        background-color: var(--clr-secondary);
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 200ms ease-in-out;
+
+        &:hover{
+            background-color: var(--clr-primary);
+        }
+    }
+
+    &__gap{
+        display: none;
+
+        @include a.mq-min(992px){
+            display: block;
+        }
+    }
+
+    &__menu-container{
+        margin-bottom: 2rem;
+
+        @include a.mq-min(768px){
+            margin-bottom: 0;
+        }
+    }
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &-heading{
+            font-size: 1.4rem;
+            color: var(--clr-secondary);
+            font-weight: 500;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: var(--clr-light-grey);
+        transition: color 200ms ease-in-out;
+
+        &:hover, &:focus{
+            color: var(--clr-primary);
+        }
+    }
+
+    &__bottom{
+        padding: 2rem 0;
+        text-align: center;
+        color: var(--clr-light-grey);
+        border-top: 1px solid var(--clr-x-light-grey);
+    }
+}

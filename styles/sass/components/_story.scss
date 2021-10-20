@@ -1,0 +1,18 @@
+@use '../abstracts/' as a;
+
+.story{
+    text-align: center;
+
+    &__heading{
+        font-size: 2.5rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+        color: var(--clr-secondary);
+        margin-bottom: 1rem;
+
+        @include a.mq-min(768px){
+            font-size: 3.5rem;
+            letter-spacing: -3px;
+        }
+    }
+}
