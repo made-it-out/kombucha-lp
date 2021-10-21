@@ -1,6 +1,13 @@
 @use '../abstracts/' as a;
 
 .header{    
+    &.nav-shown{
+        position: relative;
+
+        .container{
+            position: unset;
+        }
+    }
     .container{
         position: relative;
         padding-top: 2rem;
