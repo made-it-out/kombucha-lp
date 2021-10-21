@@ -537,6 +537,18 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px dashed var(--clr-primary);
   z-index: -1;
 }
+.image-with-text__watch-video .play-icon:hover::after {
+  -webkit-animation-name: wheel;
+          animation-name: wheel;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 .image-with-text__watch-video span {
   display: none;
   font-size: 0.8rem;
@@ -1126,4 +1138,22 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+}
+
+@-webkit-keyframes wheel {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes wheel {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
 }

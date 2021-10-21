@@ -121,6 +121,16 @@
                 background-color: var(--clr-white);
                 border: 1px dashed var(--clr-primary);
                 z-index: -1;
+
+                
+            }
+            &:hover::after{
+                animation-name: wheel;
+                animation-duration: 1000ms;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+                // animation-direction: normal;
             }
         }
         span{

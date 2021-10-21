@@ -70,3 +70,12 @@
     animation-fill-mode: forwards;
     opacity: 0;
 }
+
+@keyframes wheel{
+    0%{
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(-360deg);
+    }
+}
