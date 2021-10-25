@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Animations on scroll
     const animateOptions = {
-        threshold: 0.1
+        threshold: 0.5
     }
 
     const animateOnScroll = new IntersectionObserver(function (entries, animateOnScroll) {

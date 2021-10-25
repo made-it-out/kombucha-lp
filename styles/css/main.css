@@ -1029,6 +1029,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: none;
   }
 }
+.fade-from-left {
+  opacity: 0;
+}
 .fade-from-left.animate {
   -webkit-animation-name: fade-from-left;
           animation-name: fade-from-left;
@@ -1038,7 +1041,6 @@ h1, h2, h3, h4, h5, h6 {
           animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @-webkit-keyframes fade-from-right {
@@ -1062,6 +1064,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: none;
   }
 }
+.fade-from-right {
+  opacity: 0;
+}
 .fade-from-right.animate {
   -webkit-animation-name: fade-from-right;
           animation-name: fade-from-right;
@@ -1071,7 +1076,6 @@ h1, h2, h3, h4, h5, h6 {
           animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @-webkit-keyframes fade-slide-up {
@@ -1095,6 +1099,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: none;
   }
 }
+.fade-slide-up {
+  opacity: 0;
+}
 .fade-slide-up.animate {
   -webkit-animation-name: fade-slide-up;
           animation-name: fade-slide-up;
@@ -1104,7 +1111,6 @@ h1, h2, h3, h4, h5, h6 {
           animation-timing-function: cubic-bezier(0.13, 0.36, 0.76, 0.98);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @-webkit-keyframes pop-in {
@@ -1128,6 +1134,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: none;
   }
 }
+.pop-in {
+  opacity: 0;
+}
 .pop-in.animate {
   -webkit-animation-name: pop-in;
           animation-name: pop-in;
@@ -1137,7 +1146,6 @@ h1, h2, h3, h4, h5, h6 {
           animation-timing-function: cubic-bezier(0, 0.9, 0.3, 1.2);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @-webkit-keyframes wheel {

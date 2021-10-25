@@ -1,81 +1,102 @@
-
-@keyframes fade-from-left{
-    0%{
+@keyframes fade-from-left {
+    0% {
         opacity: 0;
         transform: translateX(-4rem);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: none;
     }
 }
-.fade-from-left.animate{
-    animation-name: fade-from-left;
-    animation-duration: 2000ms;
-    animation-timing-function: cubic-bezier(0,.5,0,1);
-    animation-fill-mode: forwards;
+
+.fade-from-left {
     opacity: 0;
+
+    &.animate {
+        animation-name: fade-from-left;
+        animation-duration: 2000ms;
+        animation-timing-function: cubic-bezier(0, .5, 0, 1);
+        animation-fill-mode: forwards;
+    }
 }
 
-@keyframes fade-from-right{
-    0%{
+@keyframes fade-from-right {
+    0% {
         opacity: 0;
         transform: translateX(4rem);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: none;
     }
 }
-.fade-from-right.animate{
-    animation-name: fade-from-right;
-    animation-duration: 2000ms;
-    animation-timing-function: cubic-bezier(0,.5,0,1);
-    animation-fill-mode: forwards;
+
+.fade-from-right {
     opacity: 0;
+
+    &.animate {
+        animation-name: fade-from-right;
+        animation-duration: 2000ms;
+        animation-timing-function: cubic-bezier(0, .5, 0, 1);
+        animation-fill-mode: forwards;
+    }
 }
 
-@keyframes fade-slide-up{
-    0%{
+@keyframes fade-slide-up {
+    0% {
         opacity: 0;
         transform: translateY(4rem);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: none;
     }
 }
-.fade-slide-up.animate{
-    animation-name: fade-slide-up;
-    animation-duration: 1000ms;
-    animation-timing-function: cubic-bezier(.13,.36,.76,.98);
-    animation-fill-mode: forwards;
+
+.fade-slide-up {
     opacity: 0;
+
+    &.animate {
+        animation-name: fade-slide-up;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.13, .36, .76, .98);
+        animation-fill-mode: forwards;
+    }
 }
 
-@keyframes pop-in{
-    0%{
+@keyframes pop-in {
+    0% {
         opacity: 0;
         transform: translateY(-4rem) scale(.8);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: none;
     }
 }
-.pop-in.animate{
-    animation-name: pop-in;
-    animation-duration: 600ms;
-    animation-timing-function: cubic-bezier(0,.9,.3,1.2);
-    animation-fill-mode: forwards;
+
+.pop-in {
     opacity: 0;
+
+    &.animate {
+        animation-name: pop-in;
+        animation-duration: 600ms;
+        animation-timing-function: cubic-bezier(0, .9, .3, 1.2);
+        animation-fill-mode: forwards;
+
+    }
 }
 
-@keyframes wheel{
-    0%{
-        transform: translate(-50%,-50%);
+@keyframes wheel {
+    0% {
+        transform: translate(-50%, -50%);
     }
-    100%{
-        transform: translate(-50%,-50%) rotate(-360deg);
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
     }
 }
